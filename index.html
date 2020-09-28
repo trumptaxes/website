@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <head>
     <link href="style.css" rel="stylesheet">
+    <script>
+        function yes() {
+            document.getElementById("result").style = "color: red;";
+            document.getElementById("result").innerText = "YOU PAID MORE TAXES THAN DONALD TRUMP";
+        }
+
+        function no() {
+            document.getElementById("result").style = "";
+            document.getElementById("result").innerText = "You did not pay more than Trump";
+        }
+    </script>
 </head>
 <body>
-    <p id="message">YES</p>
+    <p id="message">Did you pay more than $750 in taxes to the U.S. government?</p>
+    <form id="answer-form">
+        <input type="radio" name="answer" value="yes" onclick="yes()">
+        <label for="yes">Yes</label>
+        <input type="radio" name="answer" value="no" onclick="no()">
+        <label for="no">No</label>
+    </form>
+    <p id="result"></p>
 </body>
