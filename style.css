@@ -1,15 +1,4 @@
-#message {
-    text-align: center;
-    font-size: xx-large;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#answer-form {
-    text-align: center;
-    font-size: xx-large;
-}
-
-#result {
+body {
     text-align: center;
     font-size: xx-large;
     font-family: Arial, Helvetica, sans-serif;
